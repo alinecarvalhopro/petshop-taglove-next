@@ -1,0 +1,3 @@
+const CartListProduct = () => {
+  return <></>;
+};

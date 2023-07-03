@@ -1,0 +1,29 @@
+:root {
+	--color-bg-primary: #ffc176;
+	--color-br-secundary: white;
+  
+	--color-orangeScale100: #ff8c00;
+	--color-orangeScale80: #ffc176;
+	--color-orangeScale60: #ffc176a9;
+	--color-orangeScale40: #ffc1764b;
+  
+	--color-greyScale100: #12130f;
+	--color-greyScale80: #34352c;
+	--color-greyScale60: #575757;
+	--color-greyScale40: #645e5f;
+	--color-greyScale20: #12130f96;
+  
+	--color-greenScale100: #00ff0416;
+	--color-greenScale50: #00ff0400;
+  }
+
+  body {
+	background-color: var(--color-bg-primary);
+  }
+  
+  @media (min-width: 1000px) {
+	button {
+	  cursor: pointer;
+	}
+  }
+  
