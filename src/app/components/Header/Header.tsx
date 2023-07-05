@@ -2,7 +2,7 @@ import "./header.scss";
 import Image from "next/image";
 import { CartIcon } from "./CartIcon/CartIcon";
 import { UserControllerIcon } from "./UserControllerIcon/UserControllerIcon";
-import { SearchWord } from "./SearchWord/SearchWord";
+import { Search } from "./Search/Search";
 
 export const Header = () => {
   return (
@@ -20,7 +20,7 @@ export const Header = () => {
           <CartIcon />
         </div>
       </div>
-      <SearchWord/>
+      <Search />
     </header>
   );
 };

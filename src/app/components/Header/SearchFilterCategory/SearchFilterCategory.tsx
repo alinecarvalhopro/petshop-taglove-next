@@ -1,3 +1,0 @@
-const SearchFilterCategory = () => {
-  return <></>;
-};

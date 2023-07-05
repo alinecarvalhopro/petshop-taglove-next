@@ -1,4 +1,3 @@
-import "./input.scss";
 import { ForwardedRef, InputHTMLAttributes, forwardRef } from "react";
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
