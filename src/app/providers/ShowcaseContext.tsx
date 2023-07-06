@@ -6,13 +6,27 @@ interface IShowcaseProviderProps {
   children: React.ReactNode;
 }
 
-interface IShowcaseContext {}
+interface IShowcaseContext {
+  optionsSeachFilterCategory: IOptionsSeachFilterCategory[];
+}
+
+interface IOptionsSeachFilterCategory {
+  value: string;
+}
 
 export const ShowcaseContext = createContext({} as IShowcaseContext);
 
 export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
+  const optionsSeachFilterCategory: IOptionsSeachFilterCategory[] = [
+    { value: "Todos" },
+    { value: "Alimentação" },
+    { value: "higiêne" },
+    { value: "Acessórios" },
+  ];
   return (
-    <ShowcaseContext.Provider value={{}}>{children}</ShowcaseContext.Provider>
+    <ShowcaseContext.Provider value={{ optionsSeachFilterCategory }}>
+      {children}
+    </ShowcaseContext.Provider>
   );
 };
 
