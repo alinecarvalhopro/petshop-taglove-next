@@ -20,9 +20,10 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
   const optionsSeachFilterCategory: IOptionsSeachFilterCategory[] = [
     { value: "Todos" },
     { value: "Alimentação" },
-    { value: "higiêne" },
+    { value: "Higiene" },
     { value: "Acessórios" },
   ];
+
   return (
     <ShowcaseContext.Provider value={{ optionsSeachFilterCategory }}>
       {children}
