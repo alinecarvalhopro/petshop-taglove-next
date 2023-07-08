@@ -1,4 +1,4 @@
-# Projeto Petshop TagLove (em desenvolvimento)
+# Projeto Pet Shop TagLove (em desenvolvimento)
 
 Nesse projeto estou recriando em NextJS, React e TypeScript um dos primeiros projetos que desenvolvi em JavaScript Vanilla.
 
