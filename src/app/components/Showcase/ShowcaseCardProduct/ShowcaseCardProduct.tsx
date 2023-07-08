@@ -1,6 +1,6 @@
+import { IProduct } from "@/app/providers/ShowcaseContext";
 import "./showcaseCardproduct.scss";
 import Image from "next/image";
-import { IProduct } from "../../../../../database/productsDatabase";
 
 interface IProductProps {
   product: IProduct;

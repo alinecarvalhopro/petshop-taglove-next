@@ -1,13 +1,5 @@
+import { IProduct } from "@/app/providers/ShowcaseContext";
 import { v4 as uuidv4 } from "uuid";
-
-export interface IProduct {
-  id: string;
-  img: string,
-  name: string;
-  description: string;
-  price: number;
-  category: "Alimentação" | "Higiene" | "Acessórios";
-}
 
 export const productsDatabase: IProduct[] = [
   {

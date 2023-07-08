@@ -4,9 +4,15 @@ import "./serach.scss";
 import { Select } from "../../fragments/Select/Select";
 import { Input } from "../../fragments/Input/Input";
 import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
+import Image from "next/image";
 
 export const Search = () => {
-  const { optionsSeachFilterCategory } = useShowcaseContext();
+  const {
+    optionsSeachFilterCategory,
+    searchWord,
+    inputSearchValue,
+    setInputSearchValue,
+  } = useShowcaseContext();
 
   return (
     <div className="header__div--search">
@@ -22,11 +28,30 @@ export const Search = () => {
         ))}
       </Select>
       <Input
+        value={inputSearchValue}
+        onChange={(event) => {
+          setInputSearchValue(event.target.value);
+        }}
         className="header__input--search"
         id="search"
         type="search"
         placeholder="Pesquisar item"
       />
+      <button
+        className="header__button--search"
+        onClick={() => {
+          searchWord(inputSearchValue)
+          , setInputSearchValue("");
+        }}
+      >
+        <Image
+          src="/imageApp/search.svg"
+          alt="search"
+          width={25}
+          height={25}
+          priority
+        />
+      </button>
     </div>
   );
 };
