@@ -14,10 +14,6 @@ Funcionalidades que serão implementadas:
 - Login
 - Estilização versão Desktop
 
-Maiores detalhes:
-- Link do projeto que estou recriando: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528/
-- Link do Vercel do projeto (atualizado em 08/07/23): https://petshop-taglove.vercel.app/
-
 
 
 
