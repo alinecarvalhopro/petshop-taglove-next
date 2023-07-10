@@ -12,17 +12,17 @@ export const Search = () => {
     searchWord,
     inputSearchValue,
     setInputSearchValue,
+    searchCategory,
   } = useShowcaseContext();
 
   return (
     <div className="header__div--search">
-      <Select className="header__select--search">
+      <Select
+        className="header__select--search"
+        onChange={(event) => searchCategory(event.target.value)}
+      >
         {optionsSeachFilterCategory.map((option) => (
-          <option
-            className="select__option"
-            key={option.value}
-            value={option.value}
-          >
+          <option className="select__option" key={option.value}>
             {option.value}
           </option>
         ))}
@@ -40,8 +40,7 @@ export const Search = () => {
       <button
         className="header__button--search"
         onClick={() => {
-          searchWord(inputSearchValue)
-          , setInputSearchValue("");
+          searchWord(inputSearchValue), setInputSearchValue("");
         }}
       >
         <Image

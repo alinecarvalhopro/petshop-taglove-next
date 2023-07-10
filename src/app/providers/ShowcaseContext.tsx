@@ -12,12 +12,16 @@ interface IShowcaseContext {
   productsList: IProduct[] | [];
   renderShowcase: () => void;
   searchValue: string;
+  searchValueCategory: string;
+  setSearchValueCaregory: React.Dispatch<React.SetStateAction<string>>;
   inputSearchValue: string;
   searchWord: (search: string) => void;
   clearSearchWord: () => void;
   setInputSearchValue: React.Dispatch<React.SetStateAction<string>>;
   productsListSecundary: IProduct[] | [];
   setProducstList: React.Dispatch<React.SetStateAction<[] | IProduct[]>>;
+  searchCategory: (filter: string) => void;
+  reload: () => void;
 }
 
 interface IOptionsSeachFilterCategory {
@@ -49,14 +53,15 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
   >([]);
   const [inputSearchValue, setInputSearchValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
+  const [searchValueCategory, setSearchValueCaregory] = useState("");
 
   const renderShowcase = () => {
     setProducstList(productsDatabase);
-    setProducstListSecundary(productsListSecundary);
+    setProducstListSecundary(productsDatabase);
   };
 
   const searchWord = (search: string) => {
-    const seachWordResult = productsList.filter((product) => {
+    const seachWordResult = productsListSecundary.filter((product) => {
       return product.name.toUpperCase().includes(search.toUpperCase());
     });
 
@@ -77,10 +82,25 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
     }
   };
 
+  const searchCategory = (filter: string) => {
+    const selectedCategory = productsListSecundary.filter((product) => {
+      return product.category === filter;
+    });
+    if (selectedCategory.length > 0) {
+      setProducstList(selectedCategory);
+    } else {
+      setProducstList(productsListSecundary);
+    }
+  };
+
   const clearSearchWord = () => {
     setProducstList(productsListSecundary);
     setSearchValue("");
     renderShowcase();
+  };
+
+  const reload = () => {
+    renderShowcase(), clearSearchWord();
   };
 
   return (
@@ -90,12 +110,16 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
         productsList,
         renderShowcase,
         searchValue,
+        searchValueCategory,
+        setSearchValueCaregory,
         inputSearchValue,
         searchWord,
         clearSearchWord,
         setInputSearchValue,
         productsListSecundary,
         setProducstList,
+        searchCategory,
+        reload
       }}
     >
       {children}
