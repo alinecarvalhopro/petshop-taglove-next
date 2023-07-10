@@ -2,6 +2,7 @@ import "./styles/reset.scss";
 import "./styles/globals.scss";
 import { Comfortaa } from "next/font/google";
 import { ShowcaseProvider } from "./providers/ShowcaseContext";
+import { CartProvider } from "./providers/CartContext";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={comfortaa.className}>
-        <ShowcaseProvider>{children}</ShowcaseProvider>
+        <ShowcaseProvider>
+          <CartProvider>{children}</CartProvider>
+        </ShowcaseProvider>
       </body>
     </html>
   );

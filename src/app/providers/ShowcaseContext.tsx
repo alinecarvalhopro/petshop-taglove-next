@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { productsDatabase } from "../../../database/productsDatabase";
 
 interface IShowcaseProviderProps {
@@ -90,7 +90,7 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
       setProducstList(selectedCategory);
     } else {
       setProducstList(productsListSecundary);
-    }
+    };
   };
 
   const clearSearchWord = () => {

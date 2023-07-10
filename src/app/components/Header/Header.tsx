@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "./header.scss";
 import Image from "next/image";
