@@ -1,12 +1,14 @@
 import { IProduct } from "@/app/providers/ShowcaseContext";
 import "./showcaseCardproduct.scss";
 import Image from "next/image";
+import { useCartContext } from "@/app/providers/CartContext";
 
 interface IProductProps {
   product: IProduct;
 }
 
 export const ShowcaseCardProduct = ({ product }: IProductProps) => {
+  const { addProductToCart } = useCartContext();
   return (
     <li className="showcase__li--productCard">
       <Image
@@ -25,7 +27,14 @@ export const ShowcaseCardProduct = ({ product }: IProductProps) => {
           currency: "BRL",
         })}
       </p>
-      <button className="showcase__button--AddToCard">Comprar</button>
+      <button
+        className="showcase__button--AddToCard"
+        onClick={() => {
+          addProductToCart(product.id);
+        }}
+      >
+        Comprar
+      </button>
     </li>
   );
 };

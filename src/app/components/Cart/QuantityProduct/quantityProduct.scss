@@ -1,0 +1,33 @@
+.cart__div--quantityChange {
+  width: 90px;
+  height: 40px;
+
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  p {
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+  }
+
+  .cart__button--buttonQuantity {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    background-color: white;
+
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
