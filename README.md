@@ -1,3 +1,25 @@
+# Projeto Pet Shop TagLove (em desenvolvimento)
+
+Nesse projeto estou recriando em NextJS, React e TypeScript um dos primeiros projetos que desenvolvi em JavaScript Vanilla.
+
+Funcionalidades atuais:
+- Vitrine
+- Pesquisa por palavra
+- Estilização versão Mobile
+
+Funcionalidades que serão implementadas:
+- Carrinho de compras
+- Pesquisa por categoria
+- Cadastro de usuário
+- Login
+- Estilização versão Desktop
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
