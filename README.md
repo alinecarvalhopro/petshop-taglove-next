@@ -5,10 +5,10 @@ Nesse projeto estou recriando em NextJS, React e TypeScript um dos primeiros pro
 Funcionalidades atuais:
 - Vitrine
 - Pesquisa por palavra e por categoria
+- Carrinho de compras
 - Estilização versão Mobile
 
 Funcionalidades que serão implementadas:
-- Carrinho de compras
 - Cadastro de usuário
 - Login
 - Estilização versão Desktop
