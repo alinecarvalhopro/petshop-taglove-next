@@ -2,10 +2,10 @@
 
 import "./header.scss";
 import Image from "next/image";
+import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
 import { CartIcon } from "./CartIcon/CartIcon";
 import { UserControllerIcon } from "./UserControllerIcon/UserControllerIcon";
 import { Search } from "./Search/Search";
-import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
 
 export const Header = () => {
   const { reload } = useShowcaseContext();

@@ -2,8 +2,11 @@
   width: calc(100% - 32px);
   height: 40px;
 
+  padding: 0 16px;
+
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header__select--search {
@@ -16,8 +19,6 @@
   border-radius: 5px 0 0 5px;
 
   color: var(--color-greyScale60);
-
-  grid-area: select-search;
 
   .select__option {
     height: 40px;

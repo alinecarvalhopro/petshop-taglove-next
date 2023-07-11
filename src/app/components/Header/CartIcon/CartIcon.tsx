@@ -1,17 +1,11 @@
-import { useCartContext } from "@/app/providers/CartContext";
-import { CartIconCounter } from "./CartIconCounter/CartIconCounter";
 import "./cartIcon.scss";
 import Image from "next/image";
+import Link from "next/link";
+import { CartIconCounter } from "./CartIconCounter/CartIconCounter";
 
 export const CartIcon = () => {
-  const { setCartModalIsOpen } = useCartContext();
   return (
-    <button
-      className="header_button--cartIcon"
-      onClick={() => {
-        setCartModalIsOpen(true);
-      }}
-    >
+      <Link className="header_button--cartIcon" href="/cart">
       <div className="header__div--containerCart">
         <Image
           src="/imageApp/bag.svg"
@@ -22,6 +16,7 @@ export const CartIcon = () => {
         />
         <CartIconCounter />
       </div>
-    </button>
+      </Link>
+
   );
 };

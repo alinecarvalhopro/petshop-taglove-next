@@ -8,8 +8,6 @@ interface ICartProviderProps {
 }
 
 interface ICartContext {
-  cartModalIsOpen: boolean;
-  setCartModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   addProductToCart: (productId: string) => void;
   productsCart: IProductCart[] | [];
   addQuantityProduct: (productId: string) => void;
@@ -33,7 +31,6 @@ export const CartContext = createContext({} as ICartContext);
 export const CartProvider = ({ children }: ICartProviderProps) => {
   const { productsList } = useShowcaseContext();
 
-  const [cartModalIsOpen, setCartModalIsOpen] = useState(false);
   const [productsCart, setProductsCart] = useState<IProductCart[] | []>([]);
 
   const addProductToCart = (productId: string) => {
@@ -94,14 +91,11 @@ export const CartProvider = ({ children }: ICartProviderProps) => {
 
   const removeAll = () => {
     setProductsCart([]);
-    setCartModalIsOpen(false);
   };
 
   return (
     <CartContext.Provider
       value={{
-        cartModalIsOpen,
-        setCartModalIsOpen,
         addProductToCart,
         productsCart,
         addQuantityProduct,

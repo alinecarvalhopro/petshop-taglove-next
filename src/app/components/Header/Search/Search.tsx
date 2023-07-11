@@ -1,10 +1,10 @@
 "use client";
 
 import "./serach.scss";
+import Image from "next/image";
+import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
 import { Select } from "../../fragments/Select/Select";
 import { Input } from "../../fragments/Input/Input";
-import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
-import Image from "next/image";
 
 export const Search = () => {
   const {

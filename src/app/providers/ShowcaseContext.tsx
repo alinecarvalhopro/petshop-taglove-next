@@ -90,7 +90,7 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
       setProducstList(selectedCategory);
     } else {
       setProducstList(productsListSecundary);
-    };
+    }
   };
 
   const clearSearchWord = () => {
@@ -100,7 +100,7 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
   };
 
   const reload = () => {
-    renderShowcase(), clearSearchWord();
+    window.location.replace("./");
   };
 
   return (
@@ -119,7 +119,7 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
         productsListSecundary,
         setProducstList,
         searchCategory,
-        reload
+        reload,
       }}
     >
       {children}

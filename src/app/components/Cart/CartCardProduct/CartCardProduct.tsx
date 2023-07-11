@@ -1,6 +1,6 @@
 import "./cartCardProduct.scss";
-import { IProductCart, useCartContext } from "@/app/providers/CartContext";
 import Image from "next/image";
+import { IProductCart, useCartContext } from "@/app/providers/CartContext";
 import { QuantityProduct } from "../QuantityProduct/QuantityProduct";
 
 interface IProductCartProps {
