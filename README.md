@@ -5,18 +5,17 @@ Nesse projeto estou recriando em NextJS, React e TypeScript um dos primeiros pro
 Funcionalidades atuais:
 - Vitrine
 - Pesquisa por palavra e por categoria
-- Carrinho de compras
-- Estilização versão Mobile
+- Rota e Carrinho de compras funcional
+- Responsividade (Mobile-First)
 
 Funcionalidades que serão implementadas:
 - Cadastro de usuário
 - Login
-- Estilização versão Desktop
 
+Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
+Link do vercel do projeto atual (em desenvolvimento): https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528/
 
-
-
-
+#nextjs #react #typescript
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
