@@ -12,8 +12,9 @@ Funcionalidades que serão implementadas:
 - Cadastro de usuário
 - Login
 
-Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
-Link do vercel do projeto atual (em desenvolvimento): https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528/
+Saiba mais:
+- Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
+- Link do vercel do projeto atual (em desenvolvimento): https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528/
 
 #nextjs #react #typescript
 
