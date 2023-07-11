@@ -8,9 +8,11 @@ Funcionalidades atuais:
 - Rota e Carrinho de compras funcional
 - Responsividade (Mobile-First)
 
+
 Funcionalidades que serão implementadas:
 - Cadastro de usuário
 - Login
+
 
 Saiba mais:
 - Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
