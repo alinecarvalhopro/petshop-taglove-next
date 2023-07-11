@@ -2,7 +2,7 @@ import { Showcase } from "./components/Showcase/Showcase";
 
 const Home = () => {
   return (
-    <main>
+    <main className="home">
       <Showcase />
     </main>
   );

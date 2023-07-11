@@ -13,6 +13,7 @@ export const Header = () => {
     <header>
       <div className="header__div--containerLogoButtonIcons">
         <Image
+          className="header__logo"
           onClick={() => reload()}
           src="/imageApp/logo.png"
           alt="logo"

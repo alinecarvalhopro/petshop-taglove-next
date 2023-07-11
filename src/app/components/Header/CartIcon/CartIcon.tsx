@@ -16,7 +16,7 @@ export const CartIcon = () => {
         />
         <CartIconCounter />
       </div>
-      </Link>
+     </Link>
 
   );
 };

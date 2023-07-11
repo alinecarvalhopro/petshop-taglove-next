@@ -12,18 +12,20 @@ export const CartCardProduct = ({ product }: IProductCartProps) => {
   return (
     <li className="cart__card">
       <div className="cart__div--imageNameQuantity">
-        <Image
-          className="cart__img--product"
-          src={product.img}
-          alt={`Imagem`}
-          width={50}
-          height={50}
-          priority
-        />
-        <h3 className="cart__h3--nameProduct">{`${product.name.substring(
-          0,
-          12
-        )}...`}</h3>
+        <div className="cart__div--imageName">
+          <Image
+            className="cart__img--product"
+            src={product.img}
+            alt={`Imagem`}
+            width={50}
+            height={50}
+            priority
+          />
+          <h3 className="cart__h3--nameProduct">{`${product.name.substring(
+            0,
+            15
+          )}...`}</h3>
+        </div>
         <QuantityProduct product={product} />
       </div>
       <div className="cart__div--priceAndRemove">

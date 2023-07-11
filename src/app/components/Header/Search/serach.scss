@@ -7,6 +7,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: 1000px) {
+    width: 500px;
+    margin: 0 auto;
+
+    position: fixed;
+    top: 38px;
+    left: 180px;
+  }
 }
 
 .header__select--search {
