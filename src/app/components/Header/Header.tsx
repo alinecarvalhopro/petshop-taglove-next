@@ -5,9 +5,12 @@ import Image from "next/image";
 import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
 import { CartIcon } from "./CartIcon/CartIcon";
 import { UserControllerIcon } from "./UserControllerIcon/UserControllerIcon";
-import { Search } from "./Search/Search";
 
-export const Header = () => {
+interface IHeaderProps {
+  children: React.ReactNode;
+}
+
+export const Header = ({children}: IHeaderProps) => {
   const { reload } = useShowcaseContext();
   return (
     <header>
@@ -26,7 +29,7 @@ export const Header = () => {
           <CartIcon />
         </div>
       </div>
-      <Search />
+      {children}
     </header>
   );
 };

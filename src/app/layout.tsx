@@ -3,7 +3,6 @@ import "./styles/globals.scss";
 import { Comfortaa } from "next/font/google";
 import { ShowcaseProvider } from "./providers/ShowcaseContext";
 import { CartProvider } from "./providers/CartContext";
-import { Header } from "./components/Header/Header";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
@@ -25,7 +24,6 @@ export default function RootLayout({
       <body className={comfortaa.className}>
         <ShowcaseProvider>
           <CartProvider>
-            <Header/>
             {children}
             </CartProvider>
         </ShowcaseProvider>
