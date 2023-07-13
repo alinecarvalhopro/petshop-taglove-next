@@ -1,18 +1,12 @@
-# Projeto Pet Shop TagLove (em desenvolvimento)
+# Projeto Pet Shop TagLove
 
-Nesse projeto estou recriando em NextJS, React e TypeScript um dos primeiros projetos que desenvolvi em JavaScript Vanilla.
+Nesse projeto recriei em NextJS, React e TypeScript um dos primeiros projetos que desenvolvi em JavaScript Vanilla.
 
 Funcionalidades atuais:
 - Vitrine
 - Pesquisa por palavra e por categoria
 - Rota e Carrinho de compras funcional
 - Responsividade (Mobile-First)
-
-
-Funcionalidades que serão implementadas:
-- Cadastro de usuário
-- Login
-
 
 Saiba mais:
 - Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
