@@ -100,7 +100,7 @@ export const ShowcaseProvider = ({ children }: IShowcaseProviderProps) => {
   };
 
   const reload = () => {
-    window.location.replace("./");
+    window.location.reload();
   };
 
   return (

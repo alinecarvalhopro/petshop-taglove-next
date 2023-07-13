@@ -2,6 +2,6 @@ import { useCartContext } from "@/app/providers/CartContext";
 import "./cartIconCounter.scss";
 
 export const CartIconCounter = () => {
-  const {productsCart} = useCartContext();
-  return <p className="header__p--cartIconCounter">{productsCart.length}</p>;
+  const { quantity } = useCartContext();
+  return <p className="header__p--cartIconCounter">{quantity ? quantity : 0}</p>;
 };

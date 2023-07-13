@@ -1,46 +1,45 @@
 :root {
-	--color-bg-primary: #ffc176;
-	--color-bg-secundary: white;
-  
-	--color-orangeScale100: #ff8c00;
-	--color-orangeScale80: #ffc176;
-	--color-orangeScale60: #ff8c005b;
-	// --color-orangeScale40: #ffc176a9;
-  
-	--color-greyScale100: #1E1E1E;
-	// --color-greyScale80: #34352c;
-	--color-greyScale60: #545454;
-	--color-greyScale20: #12130f96;
-  
-	--color-greenDetails: #00ff043e;
+  --color-bg-primary: #ffc176;
+  --color-bg-secundary: white;
 
-	--shadow-default: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --color-orangeScale100: #ff8c00;
+  --color-orangeScale80: #ffc176;
+  --color-orangeScale60: #ff8c005b;
+
+  --color-greyScale100: #1e1e1e;
+  --color-greyScale60: #545454;
+  --color-greyScale20: #12130f96;
+
+  --color-greenDetails: #00ff043e;
+
+  --shadow-default: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  button,
+  select,
+  a,
+  .header__logo {
+    cursor: pointer;
   }
 
-  body {
-	background-color: var(--color-bg-primary);
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  input {
+    cursor: text;
   }
+}
 
-  .home {
-	@media (min-width: 1000px) {
-		width: 100%;
-		height: 100vh;
-	  }
-  }
-  
+.home {
   @media (min-width: 1000px) {
-	button, select, a, .header__logo {
-	  cursor: pointer;
-	}
-
-	input {
-		cursor: text;
-	}
-	
+    width: 100%;
+    height: 100vh;
   }
-  
+}

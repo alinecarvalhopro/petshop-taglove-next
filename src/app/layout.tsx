@@ -22,11 +22,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={comfortaa.className}>
-        <ShowcaseProvider>
-          <CartProvider>
-            {children}
-            </CartProvider>
-        </ShowcaseProvider>
+          <ShowcaseProvider>
+            <CartProvider>{children}</CartProvider>
+          </ShowcaseProvider>
       </body>
     </html>
   );

@@ -14,6 +14,8 @@ interface ICartContext {
   removeQuantityProduct: (productId: string) => void;
   removeProductCart: (productId: string) => void;
   removeAll: () => void;
+  quantity: number | undefined;
+  total: string | undefined;
 }
 
 export interface IProductCart {
@@ -34,7 +36,9 @@ export const CartProvider = ({ children }: ICartProviderProps) => {
   const [productsCart, setProductsCart] = useState<IProductCart[] | []>([]);
 
   const addProductToCart = (productId: string) => {
-    if (productsCart.some((product: IProductCart) => product.id === productId)) {
+    if (
+      productsCart.some((product: IProductCart) => product.id === productId)
+    ) {
       const newProduct = productsCart.map((product) => {
         if (product.id === productId) {
           product.quantity++;
@@ -93,6 +97,30 @@ export const CartProvider = ({ children }: ICartProviderProps) => {
     setProductsCart([]);
   };
 
+  let quantity;
+  if (productsCart.length > 0) {
+    const newListProductsPrice = productsCart.map(
+      (product) => product.quantity
+    );
+    quantity = newListProductsPrice.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+  }
+
+  let total;
+  if (productsCart.length > 0) {
+    const newListProducts = productsCart.map(
+      (product) => product.price * product.quantity
+    );
+    total = newListProducts
+      .reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+      .toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL",
+      });
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -102,6 +130,8 @@ export const CartProvider = ({ children }: ICartProviderProps) => {
         removeQuantityProduct,
         removeProductCart,
         removeAll,
+        quantity,
+        total,
       }}
     >
       {children}

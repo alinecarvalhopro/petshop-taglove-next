@@ -4,31 +4,7 @@ import "./cartTotal.scss";
 import { useCartContext } from "@/app/providers/CartContext";
 
 export const CartTotal = () => {
-  const { productsCart } = useCartContext();
-
-  let quantity;
-  if (productsCart.length > 0) {
-    const newListProductsPrice = productsCart.map(
-      (product) => product.quantity
-    );
-    quantity = newListProductsPrice.reduce(
-      (accumulator, currentValue) => accumulator + currentValue,
-      0
-    );
-  }
-
-  let total;
-  if (productsCart.length > 0) {
-    const newListProducts = productsCart.map(
-      (product) => product.price * product.quantity
-    );
-    total = newListProducts
-      .reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-      .toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL",
-      });
-  }
+  const { quantity , total } = useCartContext();
 
   return (
     <div className="cart__div--totalAndPrice">

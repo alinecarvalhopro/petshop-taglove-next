@@ -4,13 +4,12 @@ import "./header.scss";
 import Image from "next/image";
 import { useShowcaseContext } from "@/app/providers/ShowcaseContext";
 import { CartIcon } from "./CartIcon/CartIcon";
-import { UserControllerIcon } from "./UserControllerIcon/UserControllerIcon";
 
 interface IHeaderProps {
   children: React.ReactNode;
 }
 
-export const Header = ({children}: IHeaderProps) => {
+export const Header = ({ children }: IHeaderProps) => {
   const { reload } = useShowcaseContext();
   return (
     <header>
@@ -25,7 +24,6 @@ export const Header = ({children}: IHeaderProps) => {
           priority
         />
         <div className="header__div--containerIcons">
-          <UserControllerIcon />
           <CartIcon />
         </div>
       </div>
