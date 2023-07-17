@@ -1,4 +1,6 @@
 .showcase__section {
+  min-width: calc(100vw - 32px);
+
   margin: 196px 16px 16px 16px;
 
   padding: 32px 0 16px 0;
@@ -15,7 +17,7 @@
   @media (min-width: 1000px) {
     min-width: calc(100% - 200px);
     min-height: calc(100% - 196px);
-    
+
     margin: 150px 100px 100px 100px;
 
     padding: 0;
