@@ -36,5 +36,3 @@ next-env.d.ts
 
 .vercel
 *lock*
-/imageApp
-/imagesProducts

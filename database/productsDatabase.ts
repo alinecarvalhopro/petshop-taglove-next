@@ -20,7 +20,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Coleira.png",
+    img: "/imagesProducts/coleira.png",
     name: "Coleira auto ajustável",
     description: "Como ela se ajusta em todos os pescoços é um mistério.",
     price: 40,
@@ -68,7 +68,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Comedouro.png",
+    img: "/imagesProducts/comedouro.png",
     name: "Comedouro / Bebedouro",
     description: "Em cerâmica. Mantém a água fresca nos dias quentes.",
     price: 35,
@@ -76,7 +76,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Cama.png",
+    img: "/imagesProducts/cama.png",
     name: "Cama",
     description:
       "Espuma resistente sem abrir mão do conforto que seu pet merece.",
@@ -85,7 +85,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Escova.png",
+    img: "/imagesProducts/escova.png",
     name: "Escova",
     description: "Técnologia que deixa o pelinho do seu pet mais macio.",
     price: 23,
@@ -118,7 +118,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Pente.png",
+    img: "/imagesProducts/pente.png",
     name: "Pente",
     description: "Desembarace com facilidade o pelo do seu pet.",
     price: 24,
@@ -126,7 +126,7 @@ export const productsDatabase: IProduct[] = [
   },
   {
     id: uuidv4(),
-    img: "/imagesProducts/Casinha.png",
+    img: "/imagesProducts/casinha.png",
     name: "Casinha térmica",
     description:
       "Técnologia que mantém a temperatura interna ideal para o seu pet.",
