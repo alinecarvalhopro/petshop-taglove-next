@@ -26,7 +26,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-/public
 
 # vercel
 .vercel
@@ -36,3 +35,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+*lock*
+/imageApp
+/imagesProducts
