@@ -1,4 +1,4 @@
-# Projeto Pet Shop TagLove
+## Projeto Pet Shop TagLove
 
 Nesse projeto recriei em NextJS, React e TypeScript um dos primeiros projetos que desenvolvi em JavaScript Vanilla.
 
@@ -12,7 +12,9 @@ Saiba mais:
 - Link do projeto antigo: https://www.linkedin.com/feed/update/urn:li:activity:7021239564799254528
 - Link do Vercel do projeto atual (em desenvolvimento): https://petshop-taglove.vercel.app/
 
-#nextjs #react #typescript
+![Captura de tela 2023-08-26 224409](https://github.com/alinecarvalhopro/petshop-taglove-next/assets/118927052/4fe1a654-4316-4094-8435-0b7f0c8e9e5d)
+![Captura de tela 2023-08-26 224334](https://github.com/alinecarvalhopro/petshop-taglove-next/assets/118927052/a583617a-a6a7-4cef-89e9-c7cfba1b6a5c)
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
